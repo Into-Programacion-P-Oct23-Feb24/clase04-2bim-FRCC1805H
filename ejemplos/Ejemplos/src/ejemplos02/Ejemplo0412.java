@@ -29,7 +29,7 @@ public class Ejemplo0412 {
         for (int i = 0; i < arreglo1.length; i++) {
             for (int j = 0; j < arreglo1[i].length; j++) {
                 arreglo4[i][j] = obtenerSuma(arreglo1[i][j], 
-                        arreglo2[i][j],arreglo4[i][j]);
+                        arreglo2[i][j],arreglo3[i][j]);
             }
         }
         obtenerReporte(arreglo1);
