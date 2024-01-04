@@ -22,10 +22,19 @@ public class Ejemplo01 {
         //String miCiudad = obtenerCiudadMayuscula("Loja");
         //System.out.printf("%s\n", miCiudad);
         obtenerMultiplicacion(7,50);
-        String miMensaje =obtenerMultiplicacionDos(7,50);
+        String miMensaje = obtenerMultiplicacionDos(7,50);
         System.out.printf("%s\n",miMensaje);
     }
-    
+    public static String obtenerMultiplicacionDos(int tabla,int limite){
+        String cadenafinal = " ";
+        int resultado = 0;
+        for (int i = 1; i <= limite ;i++){
+           resultado = tabla * i;
+           cadenafinal = String.format("%s%d * %d = %d\n", cadenafinal,
+                   tabla,i,resultado);
+        }
+        return cadenafinal;
+        }
     
     public static String obtenerCiudadMayuscula(String m){
         String m2 = m.toUpperCase();
@@ -44,16 +53,7 @@ public class Ejemplo01 {
         
     }
     
-        public static String obtenerMultiplicacionDos(int tabla,int limite){
-        String cadenafinal = " ";
-        int resultado = 0;
-        for (int i = 1; i <= limite ;i++){
-           resultado = tabla * i;
-           cadenafinal = String.format("%s%d * %d = %d\n", cadenafinal,
-                   tabla,i,resultado);
-        }
-        return cadenafinal;
-        }
+    }
         
     public static String obtenerNombre(){
         return "Luis";
